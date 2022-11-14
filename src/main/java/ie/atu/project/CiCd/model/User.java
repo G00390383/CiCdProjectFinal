@@ -31,7 +31,9 @@ public class User {
     }
 
     public void set_ppsn(String ppsn_no) {
-        this.ppsn_no = ppsn_no;
+        if(ppsn_no.length() == 9 && (Character.isAlphabetic(ppsn_no.charAt(ppsn_no.length()-1)))) {
+            this.ppsn_no = ppsn_no;
+        }
     }
 
     public void set_name(String name) {
@@ -44,5 +46,8 @@ public class User {
 
     public int get_credit_score() {
         return this.credit_score;
+    }
+
+    public String get_ppsn() { return this.ppsn_no;
     }
 }

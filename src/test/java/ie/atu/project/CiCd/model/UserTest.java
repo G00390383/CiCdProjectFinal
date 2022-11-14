@@ -29,6 +29,12 @@ class UserTest {
         assertEquals(370,Joe.get_credit_score());
     }
 
+    @Test
+    void set_ppsn_test_success()
+    {
+        Joe = new User("Joe","1234567QQ",700);
+        assertEquals("1234567QQ",Joe.get_ppsn());
+    }
     @AfterEach
     void tearDown() {
 
