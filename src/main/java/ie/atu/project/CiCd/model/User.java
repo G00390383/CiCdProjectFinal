@@ -25,7 +25,9 @@ public class User {
     }
 
     public void set_credit_score(int credit_score) {
-        this.credit_score = credit_score;
+        if((300 <= credit_score ) && (credit_score <= 850)) {
+            this.credit_score = credit_score;
+        }
     }
 
     public void set_ppsn(String ppsn_no) {
@@ -38,5 +40,9 @@ public class User {
 
     public String get_name(){
         return this.name;
+    }
+
+    public int get_credit_score() {
+        return this.credit_score;
     }
 }
