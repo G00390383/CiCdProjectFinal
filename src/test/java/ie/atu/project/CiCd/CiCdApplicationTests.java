@@ -10,17 +10,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
 class CiCdApplicationTests {
-	User Joe;
+
 	@AfterEach
 	void tearDown() {
 
-	}
-
-	@Test
-	void set_name_test_success()
-	{
-		Joe = new User("Joe","92233AB",100);
-		assertEquals("Joe",Joe.get_name());
 	}
 
 	@BeforeEach
