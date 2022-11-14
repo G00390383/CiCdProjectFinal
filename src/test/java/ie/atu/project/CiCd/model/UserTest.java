@@ -9,10 +9,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class UserTest {
     User Joe;
 
-    @AfterEach
-    void tearDown() {
+    @BeforeEach
+    void setUp() {
 
     }
+
 
     @Test
     void set_name_test_success()
@@ -27,16 +28,10 @@ class UserTest {
         Joe = new User("Joe","1234567LA",370);
         assertEquals(370,Joe.get_credit_score());
     }
-    @BeforeEach
-    void setUp() {
+
+    @AfterEach
+    void tearDown() {
 
     }
-
-
-    @Test
-    void testest(){
-
-    }
-
 
 }
