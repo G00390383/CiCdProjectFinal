@@ -40,6 +40,9 @@ public class User {
         if(name.length() >= 3) {
             this.name = name;
         }
+        else{
+            throw new IllegalArgumentException("Name must be 3 characters or longer");
+        }
     }
 
     public String get_name(){

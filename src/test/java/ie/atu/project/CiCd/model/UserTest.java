@@ -23,6 +23,13 @@ class UserTest {
     }
 
     @Test
+    void set_name_test_fail()
+    {
+        Exception e_message = assertThrows(IllegalArgumentException.class, () -> Joe = new User("JT", "1234567AB", 700));
+        assertEquals("Name must be 3 characters or longer",e_message.getMessage());
+
+    }
+    @Test
     void set_credit_score_test_success()
     {
         Joe = new User("Joe","1234567LA",370);
