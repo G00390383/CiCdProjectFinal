@@ -18,7 +18,7 @@ class UserTest {
     @Test
     void set_name_test_success()
     {
-        Joe = new User("Joe","92233AB",420);
+        Joe = new User("Joe","922233AB",420);
         assertEquals("Joe",Joe.get_name());
     }
 
