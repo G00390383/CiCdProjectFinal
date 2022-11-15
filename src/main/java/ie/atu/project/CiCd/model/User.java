@@ -34,7 +34,15 @@ public class User {
     }
 
     public void set_ppsn(String ppsn_no) {
-        if(ppsn_no.length() == 9 && (Character.isAlphabetic(ppsn_no.charAt(ppsn_no.length()-1)))) {
+        if(ppsn_no.length() >9 || ppsn_no.length()<8) {
+            throw new IllegalArgumentException("PPSN number must be 8 or 9 characters long");
+        }
+        else if(Character.isDigit(ppsn_no.charAt(ppsn_no.length()-1))) {
+            throw new IllegalArgumentException("PPSN number must end with 1 or 2 characters");
+
+        }
+        else
+        {
             this.ppsn_no = ppsn_no;
         }
     }

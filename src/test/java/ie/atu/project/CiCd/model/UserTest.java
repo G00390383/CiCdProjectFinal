@@ -18,7 +18,7 @@ class UserTest {
     @Test
     void set_name_test_success()
     {
-        Joe = new User("Joe","92233AB",420);
+        Joe = new User("Joe","922233AB",420);
         assertEquals("Joe",Joe.get_name());
     }
 
@@ -48,6 +48,20 @@ class UserTest {
     {
         Joe = new User("Joe","1234567QQ",700);
         assertEquals("1234567QQ",Joe.get_ppsn());
+    }
+
+    @Test
+    void set_ppsn_test_fail_1()
+    {
+        Exception e_message = assertThrows(IllegalArgumentException.class,()->Joe = new User("Joe","32142",400));
+        assertEquals("PPSN number must be 8 or 9 characters long",e_message.getMessage());
+    }
+
+    @Test
+    void set_ppsn_test_fail_2()
+    {
+        Exception e_message = assertThrows(IllegalArgumentException.class,()->Joe = new User("Joe","321423423",400));
+        assertEquals("PPSN number must end with 1 or 2 characters",e_message.getMessage());
     }
     @AfterEach
     void tearDown() {
