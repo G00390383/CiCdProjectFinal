@@ -28,6 +28,9 @@ public class User {
         if((300 <= credit_score ) && (credit_score <= 850)) {
             this.credit_score = credit_score;
         }
+        else{
+            throw new IllegalArgumentException("Credit score can only be between 300 and 850");
+        }
     }
 
     public void set_ppsn(String ppsn_no) {

@@ -37,6 +37,13 @@ class UserTest {
     }
 
     @Test
+    void set_credit_score_test_fail()
+    {
+        Exception e_message = assertThrows(IllegalArgumentException.class,() -> Joe = new User("Joe","1234567AA",900));
+        assertEquals("Credit score can only be between 300 and 850",e_message.getMessage());
+    }
+
+    @Test
     void set_ppsn_test_success()
     {
         Joe = new User("Joe","1234567QQ",700);
