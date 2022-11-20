@@ -47,22 +47,23 @@ workflows:
   sample: # This is the name of the workflow, feel free to change it to better match your workflow.
     # Inside the workflow, you define the jobs you want to run.
     jobs:
-      - build-and-test
+
   test-and-release:
     jobs:
-      - node/test
+      - build-and-test
       - gh/release:
           notes-file: changelog.md
           tag: 0.0.1
           title: CD test
           requires:
-            - node/test
+            - /test
+            -
           context:
             - GITHUB_CREDS
           filters:
             branches:
               only:
-                - maincd
+                - master
 
 
 
