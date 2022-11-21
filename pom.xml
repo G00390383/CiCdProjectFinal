@@ -99,6 +99,7 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<finalName>docker-spring</finalName>
 	</build>
 
 </project>

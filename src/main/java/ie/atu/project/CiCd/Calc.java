@@ -2,7 +2,6 @@ package ie.atu.project.CiCd;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
 public class Calc {
     public static int add(int i, int i1) {
         return i + i1;
