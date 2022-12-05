@@ -1,4 +1,4 @@
-package ie.atu.project.CiCd.model;
+package ie.atu.project.cicd.model;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

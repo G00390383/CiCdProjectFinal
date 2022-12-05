@@ -1,4 +1,4 @@
-package ie.atu.project.CiCd;
+package ie.atu.project.cicd;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

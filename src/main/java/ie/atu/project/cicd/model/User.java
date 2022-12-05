@@ -1,12 +1,8 @@
-package ie.atu.project.CiCd.model;
+package ie.atu.project.cicd.model;
 
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.data.mongodb.core.mapping.Document;
-
-import javax.print.DocFlavor;
 
 @Data
 //@NoArgsConstructor
