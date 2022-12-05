@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ie.atu.project</groupId>
-	<artifactId>CiCd</artifactId>
+	<artifactId>cicd</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CiCd</name>
+	<name>cicd</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
